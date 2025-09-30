@@ -1,3 +1,4 @@
+"use client";
 import { useRouter } from "next/navigation";
 import { query } from "@/services/query";
 import React, { useState } from 'react';
