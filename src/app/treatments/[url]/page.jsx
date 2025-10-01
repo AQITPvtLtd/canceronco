@@ -1,9 +1,10 @@
 "use client";
-import React, { useEffect } from 'react';
+import React, { useEffect, use } from "react";
 import DetailedTreatments from "./DetailedTreatments";
 
-const page = ({ params }) => {
-  const { url } = params;
+const Page = ({ params }) => {
+  // ✅ unwrap params with React.use()
+  const { url } = use(params);
 
   // ✅ Scroll reset fix
   useEffect(() => {
@@ -11,10 +12,10 @@ const page = ({ params }) => {
   }, [url]);
 
   return (
-    <div className='lg:mt-35 mt-5'>
+    <div className="lg:mt-35 mt-5">
       <DetailedTreatments url={url} />
     </div>
   );
 };
 
-export default page;
+export default Page;
