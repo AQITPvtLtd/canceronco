@@ -84,7 +84,6 @@ const DetailedTreatments = ({ url }) => {
 
             {/* Sidebar */}
             <div className="w-full lg:w-1/4 px-4 mt-10 lg:mt-0 space-y-6">
-
               {/* Treatments Links Section */}
               <div className="bg-blue-600 text-white rounded-md shadow-md overflow-hidden">
                 <h2 className="bg-blue-700 text-center py-3 font-bold">Treatments</h2>
@@ -108,23 +107,24 @@ const DetailedTreatments = ({ url }) => {
               {/* Brain Cancer Image */}
               <div>
                 <Image
-                  src="/sidebar/adss.webp" // place inside public/images
+                  src="/sidebar/adss.webp"
                   alt="Brain Cancer Info"
                   width={400}
                   height={400}
                   className="w-full rounded-md shadow-md"
                 />
               </div>
-
             </div>
           </div>
         </div>
+
+        {/* Doctor Section */}
         <section className="w-full bg-gray-50 flex flex-col md:flex-row items-center md:items-start md:justify-start p-6 md:p-10">
           {/* Doctor Image */}
           <div className="flex-shrink-0 md:w-1/3 flex justify-center md:justify-start mb-6 md:mb-0">
             <div className="border-2 border-cyan-400 p-1">
               <Image
-                src="/about/dr-sajjan1.jpg" // 👉 replace with your image path
+                src="/about/dr-sajjan1.jpg"
                 alt="Dr. Sajjan Rajpurohit"
                 width={300}
                 height={400}
@@ -151,6 +151,7 @@ const DetailedTreatments = ({ url }) => {
             </Link>
           </div>
         </section>
+
         <Testimonials />
       </section>
     </>
