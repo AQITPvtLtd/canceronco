@@ -1,26 +1,31 @@
 // components/VideoSection.jsx
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Videos() {
-  const videos = [
-    "RuuHCj1G52o",
-    "EuRl3N6M-es",
-    "7Qw7QgCV0vE",
-    "MRfonFA36I0",
-  ];
-
+  const videos = ["RuuHCj1G52o", "EuRl3N6M-es", "7Qw7QgCV0vE", "MRfonFA36I0"];
   const playersRef = useRef([]);
+  const [apiReady, setApiReady] = useState(false);
 
   useEffect(() => {
-    // ✅ Load YouTube API script
+    // ✅ Agar API already load ho chuki hai toh dobara load mat karo
+    if (window.YT && window.YT.Player) {
+      setApiReady(true);
+      return;
+    }
+
     const tag = document.createElement("script");
     tag.src = "https://www.youtube.com/iframe_api";
     document.body.appendChild(tag);
 
-    // ✅ Create players after API load
     window.onYouTubeIframeAPIReady = () => {
+      setApiReady(true);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (apiReady) {
       playersRef.current = videos.map((videoId, index) => {
         return new window.YT.Player(`player-${index}`, {
           videoId,
@@ -29,14 +34,14 @@ export default function Videos() {
           },
         });
       });
-    };
-  }, []);
+    }
+  }, [apiReady]);
 
   const handlePlay = (event, currentIndex) => {
     if (event.data === window.YT.PlayerState.PLAYING) {
       playersRef.current.forEach((player, idx) => {
         if (idx !== currentIndex) {
-          player.pauseVideo(); // ✅ Pause other videos
+          player.pauseVideo();
         }
       });
     }
