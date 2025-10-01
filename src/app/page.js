@@ -12,7 +12,7 @@ import React from 'react'
 import Testimonial from '@/components/homepage/Testimonials'
 import Services from '@/components/homepage/Services'
 
-const page = () => {
+export default function page(){
   return (
     <div>
       <Banner />
@@ -30,5 +30,3 @@ const page = () => {
     </div>
   )
 }
-
-export default page
