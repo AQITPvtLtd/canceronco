@@ -1,7 +1,8 @@
+import React from 'react'
 import DetailedTreatments from "./DetailedTreatments";
 
-const Page = ({ params }) => {
-  const { url } = params;
+const page = ({ params }) => {
+  const { url } = params
   return (
     <div className='lg:mt-35 mt-5'>
       <DetailedTreatments url={url} />
@@ -9,4 +10,4 @@ const Page = ({ params }) => {
   )
 };
 
-export default Page;
+export default page
