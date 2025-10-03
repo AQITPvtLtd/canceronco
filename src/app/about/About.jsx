@@ -63,7 +63,7 @@ export default function About() {
     return (
         <section className="bg-white">
             <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-extrabold uppercase text-gray-800"style={{ fontFamily: "Roboto Slab, serif" }}>
+                <h2 className="text-3xl md:text-4xl font-extrabold uppercase text-gray-800" style={{ fontFamily: "Roboto Slab, serif" }}>
                     ABOUT <span className="text-teal-500">US</span>
                 </h2>
                 <div className="w-16 h-1 bg-teal-400 mx-auto mt-3"></div>
