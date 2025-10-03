@@ -12,7 +12,7 @@ const Page = ({ params }) => {
   }, [url]);
 
   return (
-    <div className="lg:mt-35 mt-5">
+    <div className="lg:mt-35 mt-10">
       <DetailedTreatments url={url} />
     </div>
   );

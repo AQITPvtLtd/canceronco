@@ -18,7 +18,7 @@ export default function Best() {
 
       {/* Content */}
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold uppercase leading-snug">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold uppercase leading-snug"style={{ fontFamily: "Roboto Slab, serif" }}>
           BEST CANCER TREATMENTS{" "}
           <span className="text-teal-400">IN DELHI</span>
         </h2>

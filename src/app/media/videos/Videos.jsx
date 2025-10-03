@@ -51,7 +51,7 @@ export default function Videos() {
     <section className="bg-white">
       <section className="max-w-7xl mx-auto px-6 py-12">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-extrabold uppercase text-gray-800">
+          <h2 className="text-3xl md:text-4xl font-extrabold uppercase text-gray-800"style={{ fontFamily: "Roboto Slab, serif" }}>
             Our <span className="text-teal-500">Videos</span>
           </h2>
           <div className="w-16 h-1 bg-teal-400 mx-auto mt-3"></div>

@@ -39,11 +39,11 @@ const DetailedType = ({ url }) => {
     }, [type]);
 
     if (loading) {
-        return <p className="text-center py-10">Loading...</p>;
+        return <p className="text-center py-10 text-black">Loading...</p>;
     }
 
     if (!type) {
-        return <p className="text-center py-10">Type not found.</p>;
+        return <p className="text-center py-10 text-black">Type not found.</p>;
     }
 
     return (

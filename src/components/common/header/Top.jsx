@@ -20,7 +20,7 @@ export default function Top({ isVisible }) {
         </div>
 
         <Link
-          href="/appointment"
+          href="/contact"
           className="bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded font-semibold text-sm"
         >
           BOOK AN APPOINTMENT

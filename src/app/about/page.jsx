@@ -3,7 +3,7 @@ import About from './About'
 
 const page = () => {
   return (
-    <div className='lg:mt-45 mt-5'>
+    <div className='lg:mt-45 md:mt-35 mt-20'>
         <About />
     </div>
   )

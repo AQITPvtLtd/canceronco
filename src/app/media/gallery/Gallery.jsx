@@ -61,8 +61,8 @@ const Gallery = () => {
     const closeModal = () => setSelectedIndex(null);
 
     return (
-        <div className="bg-white min-h-screen mt-[150px]">
-            <div className="text-center mb-8">
+        <div className="bg-white min-h-screen">
+            <div className="text-center mb-8"style={{ fontFamily: "Roboto Slab, serif" }}>
                 <h2 className="text-3xl md:text-4xl font-extrabold uppercase text-gray-800">
                     OUR <span className="text-teal-500">GALLERY</span>
                 </h2>

@@ -39,11 +39,11 @@ const DetailedTreatments = ({ url }) => {
   }, [treatment]);
 
   if (loading) {
-    return <p className="text-center py-10">Loading...</p>;
+    return <p className="text-center py-10 text-black">Loading...</p>;
   }
 
   if (!treatment) {
-    return <p className="text-center py-10">Treatment not found.</p>;
+    return <p className="text-center py-10 text-black">Treatment not found.</p>;
   }
 
   return (

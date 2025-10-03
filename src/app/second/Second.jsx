@@ -11,7 +11,6 @@ export default function Second() {
         <section className="bg-white">
             <section className="w-full py-12 px-4 md:px-16">
                 <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-
                     {/* LEFT CONTENT */}
                     <div>
                         <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-snug">
@@ -62,7 +61,7 @@ export default function Second() {
             <section className="w-full py-16 bg-white">
                 <div className="max-w-5xl mx-auto px-6 text-center">
                     {/* Heading */}
-                    <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+                    <h2 className="text-2xl md:text-3xl font-bold text-gray-900" style={{ fontFamily: "Roboto Slab, serif" }}>
                         WHY GO FOR A{" "}
                         <span className="text-cyan-500">SECOND OPINION</span> ON YOUR CANCER
                         TREATMENT

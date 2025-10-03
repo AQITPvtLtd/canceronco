@@ -20,10 +20,10 @@ export default function CommonCancer() {
   return (
     <section className="py-12 bg-white">
       <div className="max-w-6xl mx-auto text-center px-4">
-        <h2 className="text-2xl md:text-3xl font-bold mb-2 text-black">
+        <h2 className="text-2xl md:text-3xl font-bold mb-2 text-black"style={{ fontFamily: "Roboto Slab, serif" }}>
           THREE MOST <span className="text-teal-500">COMMON CANCER</span> IN WORLD
         </h2>
-        <p className="text-gray-700 mb-10">Best Medical Oncologist in Delhi</p>
+        <p className="text-black mb-10 text-xl font-semibold">Best Medical Oncologist in Delhi</p>
 
         <div className="grid md:grid-cols-3 gap-6">
           {cancers.map((cancer, idx) => (

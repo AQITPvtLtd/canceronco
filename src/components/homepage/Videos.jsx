@@ -22,7 +22,7 @@ export default function Videos() {
   return (
     <section className="py-16 bg-white">
       {/* Heading */}
-      <h2 className="text-2xl md:text-3xl font-bold text-center text-teal-600 mb-10">
+      <h2 className="text-2xl md:text-3xl font-bold text-center text-teal-600 mb-10"style={{ fontFamily: "Roboto Slab, serif" }}>
         VIDEOS
       </h2>
 

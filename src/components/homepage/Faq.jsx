@@ -70,7 +70,7 @@ export default function Faq() {
         <section className="bg-white">
             <section className="bg-white">
                 <section className="w-full px-8 md:px-16 lg:px-24 py-12">
-                    <h2 className="text-3xl font-bold text-center mb-10 text-black">
+                    <h2 className="text-3xl font-bold text-center mb-10 text-black"style={{ fontFamily: "Roboto Slab, serif" }}>
                         FREQUENTLY ASKED <span className="text-teal-500">QUESTIONS</span>
                     </h2>
                     <div className="space-y-4">

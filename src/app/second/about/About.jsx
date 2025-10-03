@@ -66,7 +66,7 @@ export default function Aboutsecond() {
 
         {/* Doctor Info */}
         <div>
-          <h2 className="text-2xl md:text-3xl font-bold mb-2 text-black text-center lg:text-left">
+          <h2 className="text-2xl md:text-3xl font-bold mb-2 text-black text-center lg:text-left"style={{ fontFamily: "Roboto Slab, serif" }}>
             DR. SAJJAN <span className="text-teal-500">RAJPUROHIT</span>
           </h2>
           <div className="h-1 w-12 bg-teal-500 mb-6 mx-auto lg:mx-0"></div>

@@ -34,7 +34,7 @@ export default function WhyChooseUs() {
     <section className="py-16 bg-white">
       {/* Heading */}
       <div className="text-center max-w-3xl mx-auto mb-12 px-4">
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-800"style={{ fontFamily: "Roboto Slab, serif" }}>
           WHY <span className="text-teal-600">CHOOSE US?</span>
         </h2>
         <p className="mt-4 text-gray-600">
