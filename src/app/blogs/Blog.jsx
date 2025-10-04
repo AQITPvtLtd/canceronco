@@ -27,7 +27,7 @@ const Blog = () => {
   return (
     <div className="lg:p-10 overflow-x-clip px-4 bg-white">
       <div className="pt-5 text-center">
-        <h1 className="text-3xl font-bold dark:text-black" style={{ fontFamily: "Roboto Slab, serif" }}>Read our latest blogs</h1>
+        <h1 className="text-3xl font-bold dark:text-black" style={{ fontFamily: "Roboto Slab, serif" }}>Read our <span className="text-teal-500">latest blogs</span></h1>
       </div>
 
       {blog.length === 0 ? (
@@ -38,7 +38,7 @@ const Blog = () => {
             <Link
               key={b.id}
               href={`/blogs/${b.url}`}
-              className="bg-white shadow-xl rounded-4xl overflow-hidden hover:shadow-2xl transition-transform transform hover:scale-105 duration-300"
+              className="bg-white shadow-xl rounded-4xl overflow-hidden hover:shadow-2xl transition-transform transform hover:scale-105 duration-300 flex flex-col"
             >
               <Image
                 src={`/blog/${b.image}`}
@@ -47,16 +47,18 @@ const Blog = () => {
                 className="w-full h-[200px]"
                 alt={b.title || "blog image"}
               />
-              <div className="p-4">
+              <div className="p-4 flex flex-col flex-grow">
                 <h1 className="text-xl font-bold dark:text-black">{b.title}</h1>
                 <div className="flex items-center gap-2 text-sm text-gray-600 my-2">
                   <SlCalender />
                   <span>{b.createdAt ? moment(b.createdAt).format("MMMM DD, YYYY") : "Unknown Date"}</span>
                 </div>
-                <p className="text-gray-700 line-clamp-3">{b.short_desc}</p>
+                <p className="text-gray-700 line-clamp-3 flex-grow">{b.short_desc}</p>
+
+                {/* Button ko neeche chipka diya */}
                 <div
-                  className="px-3 py-1.5 mt-3 cursor-pointer bg-teal-500 text-white text-lg rounded-lg block text-center transition-all 
-                border-2 border-transparent hover:border-teal-500 hover:text-black hover:bg-white"
+                  className="px-3 py-1.5 mt-3 w-full cursor-pointer bg-teal-500 text-white text-lg rounded-lg block text-center transition-all 
+      border-2 border-transparent hover:border-teal-500 hover:text-black hover:bg-white self-start"
                 >
                   Read More
                 </div>
